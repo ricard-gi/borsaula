@@ -3,9 +3,18 @@
     "id": "interes-compost",
     "title": "La màgia de l'interès compost",
     "category": "Conceptes",
-    "tags": ["Bàsic", "Mentalitat"],
+    "tags": ["Bàsic", "Estalvi"],
     "date": "2026-03-22",
-    "contentUrl": "AQUÍ_ANIRÀ_LA_URL_RAW_DEL_MARKDOWN",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/main/blog/interes-compost.md",
     "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "analisi-nvidia",
+    "title": "Per què Nvidia no para de pujar?",
+    "category": "Accions",
+    "tags": ["NVDA", "Tecnologia", "IA"],
+    "date": "2026-03-22",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/main/accions/analisi-nvidia.md",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
   }
 ]

@@ -5,7 +5,7 @@
     "category": "Conceptes",
     "tags": ["Bàsic", "Estalvi"],
     "date": "2026-03-22",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/main/blog/interes-compost.md",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/interes-compost.md",
     "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
   },
   {
@@ -14,7 +14,7 @@
     "category": "Accions",
     "tags": ["NVDA", "Tecnologia", "IA"],
     "date": "2026-03-22",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/main/accions/analisi-nvidia.md",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/analisi-nvidia.md",
     "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
   }
 ]

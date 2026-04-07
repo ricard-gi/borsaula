@@ -1,5 +1,6 @@
 {
   "features": {
-    "isPortfolioEnabled": true
+    "isPortfolioEnabled": false,
+    "inflationRate": 2.2
   }
 }

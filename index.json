@@ -3,7 +3,10 @@
     "id": "interes-compost",
     "title": "La màgia de l'interès compost",
     "category": "Conceptes",
-    "tags": ["Bàsic", "Estalvi"],
+    "tags": [
+      "Bàsic",
+      "Estalvi"
+    ],
     "date": "2026-03-22",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/interes-compost.md",
     "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
@@ -12,9 +15,101 @@
     "id": "analisi-nvidia",
     "title": "Per què Nvidia no para de pujar?",
     "category": "Accions",
-    "tags": ["NVDA", "Tecnologia", "IA"],
+    "tags": [
+      "NVDA",
+      "Tecnologia",
+      "IA"
+    ],
     "date": "2026-03-22",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/analisi-nvidia.md",
     "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-01",
+    "title": "Mentalitat i preparació",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul1.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-02",
+    "title": "Accions, ETFs, Bons i Opcions",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul2.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-03",
+    "title": "Elecció del broker i primera compra",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul3.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-04",
+    "title": "Psicologia de l'inversor",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul4.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-05",
+    "title": "Construir in pla d'inversió",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul5.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-06",
+    "title": "Valoració d'accions i negocis",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul6.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-07",
+    "title": "Fiscalitat",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul7.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "curs01-08",
+    "title": "Estratègies avançades d'inversió",
+    "category": "Accions",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul8.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
   }
 ]

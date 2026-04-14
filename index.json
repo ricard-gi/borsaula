@@ -26,7 +26,7 @@
   },
   {
     "id": "curs01-01",
-    "title": "Mentalitat i preparació",
+    "title": "Mentalitat i preparació (1/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -37,7 +37,7 @@
   },
   {
     "id": "curs01-02",
-    "title": "Accions, ETFs, Bons i Opcions",
+    "title": "Accions, ETFs, Bons i Opcions (2/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -48,7 +48,7 @@
   },
   {
     "id": "curs01-03",
-    "title": "Elecció del broker i primera compra",
+    "title": "Elecció del broker i primera compra (3/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -59,7 +59,7 @@
   },
   {
     "id": "curs01-04",
-    "title": "Psicologia de l'inversor",
+    "title": "Psicologia de l'inversor (4/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -70,7 +70,7 @@
   },
   {
     "id": "curs01-05",
-    "title": "Construir in pla d'inversió",
+    "title": "Construir in pla d'inversió (5/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -81,7 +81,7 @@
   },
   {
     "id": "curs01-06",
-    "title": "Valoració d'accions i negocis",
+    "title": "Valoració d'accions i negocis (6/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -92,7 +92,7 @@
   },
   {
     "id": "curs01-07",
-    "title": "Fiscalitat",
+    "title": "Fiscalitat (7/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -103,13 +103,46 @@
   },
   {
     "id": "curs01-08",
-    "title": "Estratègies avançades d'inversió",
+    "title": "Estratègies avançades d'inversió (8/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
     ],
     "date": "2026-04-23",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/curs01/modul8.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+    {
+    "id": "temps",
+    "title": "Time in the market",
+    "category": "Conceptes",
+    "tags": [
+      "Estratègia", "Bàsic"
+    ],
+    "date": "2026-04-20",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/temps.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+      {
+    "id": "inflacio",
+    "title": "Protegir els estalvis",
+    "category": "Conceptes",
+    "tags": [
+      "Estalvi", "Bàsic"
+    ],
+    "date": "2026-04-20",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/inflacio.md",
+    "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
+  },
+       {
+    "id": "diversificacio",
+    "title": "Diversificar",
+    "category": "Conceptes",
+    "tags": [
+      "Estalvi", "Bàsic"
+    ],
+    "date": "2026-04-20",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/diversificacio.md",
     "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800"
   }
 ]

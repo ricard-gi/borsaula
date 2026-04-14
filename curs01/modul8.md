@@ -1,6 +1,3 @@
-
-# 8. Estratègies avançades d'inversió
-
 Un cop domines la base, és hora de polir la teva tècnica per intentar batre el mercat.
 
 ## Anar un pas més enllà

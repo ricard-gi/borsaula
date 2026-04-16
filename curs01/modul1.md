@@ -1,3 +1,5 @@
+# Mentalitat i preparació
+
 Abans de posar el primer euro al mercat, cal posar ordre al teu cap i a les teves finances personals.
 
 ## Els fonaments

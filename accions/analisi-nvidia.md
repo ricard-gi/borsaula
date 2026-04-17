@@ -1,3 +1,15 @@
+---
+id: analisi-nvidia
+publish: 1
+title: "Per què Nvidia no para de pujar?"
+category: Accions
+tags:
+  - NVDA
+  - Tecnologia
+  - IA
+date: "2026-03-22"
+---
+
 # Nvidia (NVDA): El motor de la Revolució de la IA
 
 Si hi ha una empresa que ha marcat el ritme de la borsa en els últims anys, aquesta és *Nvidia*. Però, per què una empresa que fabricava targetes gràfiques per a videojocs s'ha convertit en una de les més valuoses del món?

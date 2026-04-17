@@ -1,3 +1,13 @@
+---
+id: curs01-08
+publish: 1
+title: "Estratègies avançades d'inversió (8/8)"
+category: Cursos
+tags:
+  - DesDeZero
+date: "2026-04-23"
+---
+
 Un cop domines la base, és hora de polir la teva tècnica per intentar batre el mercat.
 
 ## Anar un pas més enllà

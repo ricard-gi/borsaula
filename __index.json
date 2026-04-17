@@ -1,5 +1,28 @@
 [
   {
+    "id": "interes-compost",
+    "title": "La màgia de l'interès compost",
+    "category": "Conceptes",
+    "tags": [
+      "Bàsic",
+      "Estalvi"
+    ],
+    "date": "2026-03-22",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/interes-compost.md"
+  },
+  {
+    "id": "analisi-nvidia",
+    "title": "Per què Nvidia no para de pujar?",
+    "category": "Accions",
+    "tags": [
+      "NVDA",
+      "Tecnologia",
+      "IA"
+    ],
+    "date": "2026-03-22",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/analisi-nvidia.md"
+  },
+  {
     "id": "curs01-01",
     "title": "Borsa des de zero (1/8)",
     "category": "Cursos",
@@ -41,7 +64,7 @@
   },
   {
     "id": "curs01-05",
-    "title": "Construir un pla d'inversió (5/8)",
+    "title": "Construir in pla d'inversió (5/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
@@ -80,15 +103,15 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul8.md"
   },
   {
-    "id": "diversificacio",
-    "title": "Diversificar",
+    "id": "temps",
+    "title": "Time in the market",
     "category": "Conceptes",
     "tags": [
-      "Estalvi",
+      "Estratègia",
       "Bàsic"
     ],
     "date": "2026-04-20",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/diversificacio.md"
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/temps.md"
   },
   {
     "id": "inflacio",
@@ -102,37 +125,14 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/inflacio.md"
   },
   {
-    "id": "temps",
-    "title": "Time in the market",
+    "id": "diversificacio",
+    "title": "Diversificar",
     "category": "Conceptes",
     "tags": [
-      "Estratègia",
+      "Estalvi",
       "Bàsic"
     ],
     "date": "2026-04-20",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/temps.md"
-  },
-  {
-    "id": "interes-compost",
-    "title": "La màgia de l'interès compost",
-    "category": "Conceptes",
-    "tags": [
-      "Bàsic",
-      "Estalvi"
-    ],
-    "date": "2026-03-22",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/interes-compost.md"
-  },
-  {
-    "id": "analisi-nvidia",
-    "title": "Per què Nvidia no para de pujar?",
-    "category": "Accions",
-    "tags": [
-      "NVDA",
-      "Tecnologia",
-      "IA"
-    ],
-    "date": "2026-03-22",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/analisi-nvidia.md"
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/diversificacio.md"
   }
 ]

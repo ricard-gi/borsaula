@@ -1,3 +1,14 @@
+---
+id: interes-compost
+publish: 1
+title: "La màgia de l'interès compost"
+category: Conceptes
+tags:
+  - Bàsic
+  - Estalvi
+date: "2026-03-22"
+---
+
 # Què és l'interès compost?
 
 Albert Einstein deia que l'interès compost és la vuitena meravella del món. 

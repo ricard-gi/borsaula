@@ -1,3 +1,14 @@
+---
+id: temps
+publish: 1
+title: "Time in the market"
+category: Conceptes
+tags:
+  - Estratègia
+  - Bàsic
+date: "2026-04-20"
+---
+
 # El millor moment per invertir
 
 Molta gent espera a tenir "molts diners" o que el mercat estigui "baix" per començar a invertir. Error.

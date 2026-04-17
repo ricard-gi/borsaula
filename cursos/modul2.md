@@ -1,3 +1,13 @@
+---
+id: curs01-02
+publish: 1
+title: "Accions, ETFs, Bons i Opcions (2/8)"
+category: Cursos
+tags:
+  - DesDeZero
+date: "2026-04-23"
+---
+
 No tots els actius són iguals. Conèixer les teves eines és vital per saber què estàs comprant exactament.
 
 ## La teva caixa d'eines

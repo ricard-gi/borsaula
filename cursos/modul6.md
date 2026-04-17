@@ -1,3 +1,13 @@
+---
+id: curs01-06
+publish: 1
+title: "Valoració d'accions i negocis (6/8)"
+category: Cursos
+tags:
+  - DesDeZero
+date: "2026-04-23"
+---
+
 Com saps si una acció està barata o cara? El preu no és el mateix que el valor.
 
 ## Entendre el negoci

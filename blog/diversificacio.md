@@ -1,3 +1,14 @@
+---
+id: diversificacio
+publish: 1
+title: "Diversificar"
+category: Conceptes
+tags:
+  - Estalvi
+  - Bàsic
+date: "2026-04-20"
+---
+
 # Diversificació: no et juguis tot a una carta
 
 Has sentit mai la frase "no posis tots els ous a la mateixa cistella"? En el món de la inversió, això és la diversificació.

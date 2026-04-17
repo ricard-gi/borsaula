@@ -1,3 +1,14 @@
+---
+id: inflacio
+publish: 1
+title: "Protegir els estalvis"
+category: Conceptes
+tags:
+  - Estalvi
+  - Bàsic
+date: "2026-04-20"
+---
+
 # Què és la inflació?
 
 Si sents que cada vegada la cistella de l'anar a comprar és més cara, no és una impressió teva: és la inflació.

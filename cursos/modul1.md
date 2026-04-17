@@ -1,3 +1,13 @@
+---
+id: curs01-01
+publish: 1
+title: "Borsa des de zero (1/8)"
+category: Cursos
+tags:
+  - DesDeZero
+date: "2026-04-23"
+---
+
 # Mentalitat i preparació
 
 Abans de posar el primer euro al mercat, cal posar ordre al teu cap i a les teves finances personals.

@@ -1,6 +1,6 @@
 ---
 id: diversificacio
-publish: 0
+publish: 1
 title: "Diversificar"
 category: Conceptes
 tags:

@@ -80,17 +80,6 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul8.md"
   },
   {
-    "id": "diversificacio",
-    "title": "Diversificar",
-    "category": "Conceptes",
-    "tags": [
-      "Estalvi",
-      "Bàsic"
-    ],
-    "date": "2026-04-20",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/diversificacio.md"
-  },
-  {
     "id": "inflacio",
     "title": "Protegir els estalvis",
     "category": "Conceptes",

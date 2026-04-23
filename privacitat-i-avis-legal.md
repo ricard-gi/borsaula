@@ -1,7 +1,7 @@
 
 ### 📋 Política de Privacitat de Borsapp
 
-**Última actualització:** 7 d'abril de 2026
+**Última actualització:** 23 d'abril de 2026
 
 Aquesta Política de Privacitat descriu com Borsapp (d'ara endavant, "l'Aplicació", "nosaltres" o "el Desenvolupador") gestiona la informació dels usuaris. La nostra prioritat és la teva privacitat, per la qual cosa hem dissenyat l'Aplicació perquè funcioni de manera autònoma i local.
 
@@ -19,7 +19,7 @@ Com que les dades resideixen únicament al teu dispositiu, tens el control absol
 Podem actualitzar la nostra Política de Privacitat ocasionalment. Qualsevol canvi serà reflectit en aquesta pàgina amb una nova data de revisió.
 
 **5. Contacte**
-Si tens qualsevol dubte sobre aquesta Política de Privacitat, pots contactar amb el desenvolupador a: *[El teu correu electrònic, ex: contacte@borsapp.cat]*
+Si tens qualsevol dubte sobre aquesta Política de Privacitat, pots contactar amb el desenvolupador a: codesplai@gmail.com
 
 ---
 

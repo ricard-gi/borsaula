@@ -1,6 +1,6 @@
 ---
 id: curs01-04
-publish: 1
+publish: 0
 title: "Psicologia de l'inversor (4/8)"
 category: Cursos
 tags:

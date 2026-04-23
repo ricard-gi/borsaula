@@ -1,6 +1,6 @@
 ---
 id: curs01-07
-publish: 1
+publish: 0
 title: "Fiscalitat (7/8)"
 category: Cursos
 tags:

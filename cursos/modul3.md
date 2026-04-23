@@ -1,6 +1,6 @@
 ---
 id: curs01-03
-publish: 1
+publish: 0
 title: "Elecció del broker i primera compra (3/8)"
 category: Cursos
 tags:

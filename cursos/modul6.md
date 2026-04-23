@@ -1,6 +1,6 @@
 ---
 id: curs01-06
-publish: 1
+publish: 0
 title: "Valoració d'accions i negocis (6/8)"
 category: Cursos
 tags:

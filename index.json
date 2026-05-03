@@ -1,5 +1,15 @@
 [
   {
+    "id": "curs01-03",
+    "title": "Elecció del broker i primera compra (3/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-05-03",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul3.md"
+  },
+  {
     "id": "curs01-01",
     "title": "Mentalitat i preparació (1/8)",
     "category": "Cursos",

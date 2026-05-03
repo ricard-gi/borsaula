@@ -1,0 +1,11 @@
+[
+  { "name": "Microsoft", "ticker": "MSFT" },
+  { "name": "Meta", "ticker": "META" },
+  { "name": "Nvidia", "ticker": "NVDA" },
+  { "name": "Constellation Software", "ticker": "CSU.TO" },
+  { "name": "Waste Management", "ticker": "WM" },
+  { "name": "S&P 500", "ticker": "SPY" },
+  { "name": "Google", "ticker": "GOOGL" },
+  { "name": "Apple", "ticker": "AAPL" },
+  { "name": "Tesla", "ticker": "TSLA" }
+]

@@ -30,6 +30,16 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul2.md"
   },
   {
+    "id": "curs01-04",
+    "title": "Psicologia de l'inversor (4/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul4.md"
+  },
+  {
     "id": "diversificacio",
     "title": "Diversificar",
     "category": "Conceptes",

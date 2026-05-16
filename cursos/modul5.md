@@ -14,4 +14,4 @@ Invertir sense un pla és com navegar sense brúixola: pots tenir sort, però el
 Un bon pla defineix quins actius tindràs, cada quant invertiràs i quan vendràs. Tenir un sistema automatitzat et treu l'estrès de sobre i t'assegura que segueixes el camí correcte cap als teus objectius.
 
 
-[Comença a traçar el teu pla d'inversió avui mateix](https://www.youtube.com/watch?v=6iJ7KtfQ_mo)
+[Comença a traçar el teu pla d'inversió avui mateix](https://www.youtube.com/watch?v=07oQatibdiE)

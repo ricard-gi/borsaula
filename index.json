@@ -40,6 +40,16 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul4.md"
   },
   {
+    "id": "curs01-05",
+    "title": "Construir un pla d'inversió (5/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul5.md"
+  },
+  {
     "id": "diversificacio",
     "title": "Diversificar",
     "category": "Conceptes",

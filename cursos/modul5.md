@@ -1,6 +1,6 @@
 ---
 id: curs01-05
-publish: 0
+publish: 1
 title: "Construir un pla d'inversió (5/8)"
 category: Cursos
 tags:

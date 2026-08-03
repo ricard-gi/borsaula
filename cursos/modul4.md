@@ -5,7 +5,7 @@ title: "Psicologia de l'inversor (4/8)"
 category: Cursos
 tags:
   - DesDeZero
-date: "2026-04-23"
+date: "2026-05-08"
 ---
 
 El teu pitjor enemic a la borsa no és el mercat, sinó el mirall. Les emocions poden destruir la millor estratègia.

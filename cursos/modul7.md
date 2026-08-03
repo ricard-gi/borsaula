@@ -5,7 +5,7 @@ title: "Fiscalitat (7/8)"
 category: Cursos
 tags:
   - DesDeZero
-date: "2026-04-23"
+date: "2026-06-24"
 ---
 
 No és el que guanyes, sinó el que et queda després d'impostos. La fiscalitat pot ser la teva millor aliada o el teu pitjor malson.

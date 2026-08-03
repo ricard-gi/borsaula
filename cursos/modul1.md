@@ -5,13 +5,13 @@ title: "Mentalitat i preparació (1/8)"
 category: Cursos
 tags:
   - DesDeZero
-date: "2026-04-23"
+date: "2026-04-06"
 ---
 
 Abans de posar el primer euro al mercat, cal posar ordre al teu cap i a les teves finances personals.
 
 ## Els fonaments
-Invertir no és apostar; és un procés de carrera de fons. El primer pas és tenir un fons d'emergència i eliminar deutes dolents. Sense una base sòlida, qualsevol tempesta al mercat et farà prendre decisions precipitades.
+Invertir no és apostar; és més aviat una cursa de fons. El primer pas és tenir un fons d'emergència i eliminar deutes dolents. Sense una base sòlida, qualsevol tempesta al mercat et farà prendre decisions precipitades.
 
 A **Borsaires** t'ajudem a preparar el terreny perquè la teva aventura inversora sigui un èxit des del primer dia.
 

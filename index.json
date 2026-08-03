@@ -50,6 +50,26 @@
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul5.md"
   },
   {
+    "id": "curs01-06",
+    "title": "Valoració d'accions i negocis (6/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul6.md"
+  },
+  {
+    "id": "curs01-07",
+    "title": "Fiscalitat (7/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-23",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul7.md"
+  },
+  {
     "id": "diversificacio",
     "title": "Diversificar",
     "category": "Conceptes",

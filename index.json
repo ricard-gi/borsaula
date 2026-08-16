@@ -1,53 +1,13 @@
 [
   {
-    "id": "curs01-03",
-    "title": "Elecció del broker i primera compra (3/8)",
+    "id": "curs01-07",
+    "title": "Fiscalitat (7/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
     ],
-    "date": "2026-05-03",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul3.md"
-  },
-  {
-    "id": "curs01-01",
-    "title": "Mentalitat i preparació (1/8)",
-    "category": "Cursos",
-    "tags": [
-      "DesDeZero"
-    ],
-    "date": "2026-04-23",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul1.md"
-  },
-  {
-    "id": "curs01-02",
-    "title": "Accions, ETFs, Bons i Opcions (2/8)",
-    "category": "Cursos",
-    "tags": [
-      "DesDeZero"
-    ],
-    "date": "2026-04-23",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul2.md"
-  },
-  {
-    "id": "curs01-04",
-    "title": "Psicologia de l'inversor (4/8)",
-    "category": "Cursos",
-    "tags": [
-      "DesDeZero"
-    ],
-    "date": "2026-04-23",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul4.md"
-  },
-  {
-    "id": "curs01-05",
-    "title": "Construir un pla d'inversió (5/8)",
-    "category": "Cursos",
-    "tags": [
-      "DesDeZero"
-    ],
-    "date": "2026-04-23",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul5.md"
+    "date": "2026-06-24",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul7.md"
   },
   {
     "id": "curs01-06",
@@ -56,18 +16,38 @@
     "tags": [
       "DesDeZero"
     ],
-    "date": "2026-04-23",
+    "date": "2026-06-08",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul6.md"
   },
   {
-    "id": "curs01-07",
-    "title": "Fiscalitat (7/8)",
+    "id": "curs01-05",
+    "title": "Construir un pla d'inversió (5/8)",
     "category": "Cursos",
     "tags": [
       "DesDeZero"
     ],
-    "date": "2026-04-23",
-    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul7.md"
+    "date": "2026-05-15",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul5.md"
+  },
+  {
+    "id": "curs01-04",
+    "title": "Psicologia de l'inversor (4/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-05-08",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul4.md"
+  },
+  {
+    "id": "curs01-03",
+    "title": "Elecció del broker i primera compra (3/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-05-03",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul3.md"
   },
   {
     "id": "diversificacio",
@@ -101,6 +81,26 @@
     ],
     "date": "2026-04-20",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/temps.md"
+  },
+  {
+    "id": "curs01-02",
+    "title": "Accions, ETFs, Bons i Opcions (2/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-13",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul2.md"
+  },
+  {
+    "id": "curs01-01",
+    "title": "Mentalitat i preparació (1/8)",
+    "category": "Cursos",
+    "tags": [
+      "DesDeZero"
+    ],
+    "date": "2026-04-06",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul1.md"
   },
   {
     "id": "interes-compost",

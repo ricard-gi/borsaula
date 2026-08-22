@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Editor Borsaula</title>
+<style>
+  :root {
+    --green: #10B981;
+    --green-dark: #059669;
+    --red: #DC2626;
+    --bg: #F3F4F6;
+    --card: #FFFFFF;
+    --border: #E5E7EB;
+    --text: #111827;
+    --muted: #6B7280;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    background: var(--green);
+    color: white;
+    padding: 16px 20px;
+  }
+  header h1 { margin: 0; font-size: 20px; }
+  header p { margin: 4px 0 0; font-size: 13px; opacity: 0.9; }
+  .warning {
+    background: #FFFBEB;
+    border-bottom: 1px solid #FDE68A;
+    color: #92400E;
+    font-size: 13px;
+    padding: 10px 20px;
+  }
+  main { max-width: 900px; margin: 0 auto; padding: 20px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+  }
+  .card h2 { margin-top: 0; font-size: 16px; }
+  label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; margin-top: 10px; color: #374151; }
+  input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #F9FAFB;
+  }
+  textarea { resize: vertical; }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: inherit;
+  }
+  .btn-primary { background: var(--green); color: white; }
+  .btn-primary:hover { background: var(--green-dark); }
+  .btn-secondary { background: #F3F4F6; color: #374151; border: 1px solid #D1D5DB; }
+  .btn-danger { background: #FEE2E2; color: var(--red); }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .row { display: flex; gap: 8px; align-items: flex-end; margin-bottom: 8px; }
+  .row > div { flex: 1; }
+  .row .col-fixed { flex: none; }
+  .tabs { display: flex; gap: 4px; margin-bottom: 16px; background: #E5E7EB; padding: 4px; border-radius: 10px; }
+  .tabs button { flex: 1; background: transparent; color: #4B5563; }
+  .tabs button.active { background: white; color: var(--text); }
+  .status { font-size: 13px; margin-top: 10px; min-height: 18px; }
+  .status.ok { color: #047857; }
+  .status.error { color: var(--red); }
+  .status.loading { color: var(--muted); }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .list-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 6px;
+    cursor: pointer; background: #FAFAFA;
+  }
+  .list-item:hover { background: #F0FDF4; }
+  .list-item.selected { border-color: var(--green); background: #ECFDF5; }
+  .list-item small { color: var(--muted); }
+  .profile-card { border: 1px solid var(--border); border-radius: 10px; padding: 14px; margin-bottom: 14px; }
+  .asset-row { display: flex; gap: 8px; margin-bottom: 6px; align-items: center; }
+  .asset-row input { flex: 1; }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .top-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📝 Editor Borsaula</h1>
+  <p>Edita picks, perfils d'inversió i articles del repositori privat directament des del navegador.</p>
+</header>
+
+<div class="warning">
+  ⚠️ Els canvis es desen directament a la branca <strong>main</strong> i es publiquen a l'app en producció a l'instant. No hi ha pas intermedi de revisió.
+</div>
+
+<main>
+
+  <div class="card">
+    <h2>🔑 Accés</h2>
+    <label for="token-input">Personal Access Token de GitHub</label>
+    <input type="password" id="token-input" placeholder="github_pat_..." />
+    <div class="hint">
+      Fine-grained token amb accés només al repositori <code>ricard-gi/borsaula</code> i permís "Contents: Read and write".
+      Es desa només al teu navegador (localStorage), mai s'envia enlloc més que a l'API de GitHub.
+    </div>
+    <div class="row" style="margin-top:10px;">
+      <div class="col-fixed"><button class="btn-primary" id="save-token-btn">Desar i comprovar</button></div>
+      <div class="col-fixed"><button class="btn-secondary" id="clear-token-btn">Esborrar token</button></div>
+    </div>
+    <div class="status" id="token-status"></div>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-panel="picks-panel">Borsaires Picks</button>
+    <button class="tab-btn" data-panel="profiles-panel">Perfils d'inversió</button>
+    <button class="tab-btn" data-panel="articles-panel">Articles</button>
+  </div>
+
+  <!-- PICKS PANEL -->
+  <section class="panel active" id="picks-panel">
+    <div class="card">
+      <div class="top-actions">
+        <h2 style="margin:0;">Borsaires Picks</h2>
+        <button class="btn-secondary" id="picks-reload-btn">Recarregar</button>
+      </div>
+      <div id="picks-list"></div>
+      <button class="btn-secondary" id="picks-add-btn" style="margin-top:8px;">+ Afegir tiquet</button>
+      <hr />
+      <button class="btn-primary" id="picks-save-btn">Desar canvis</button>
+      <div class="status" id="picks-status"></div>
+    </div>
+  </section>
+
+  <!-- PROFILES PANEL -->
+  <section class="panel" id="profiles-panel">
+    <div class="card">
+      <div class="top-actions">
+        <h2 style="margin:0;">Perfils d'inversió de Borsaires</h2>
+        <button class="btn-secondary" id="profiles-reload-btn">Recarregar</button>
+      </div>
+      <div id="profiles-list"></div>
+      <button class="btn-secondary" id="profiles-add-btn" style="margin-top:8px;">+ Afegir perfil</button>
+      <hr />
+      <button class="btn-primary" id="profiles-save-btn">Desar canvis</button>
+      <div class="status" id="profiles-status"></div>
+    </div>
+  </section>
+
+  <!-- ARTICLES PANEL -->
+  <section class="panel" id="articles-panel">
+    <div class="card">
+      <div class="top-actions">
+        <h2 style="margin:0;">Articles</h2>
+        <button class="btn-secondary" id="articles-reload-btn">Recarregar llista</button>
+      </div>
+      <div id="articles-list"></div>
+      <button class="btn-secondary" id="articles-new-btn" style="margin-top:8px;">+ Nou article</button>
+      <div class="status" id="articles-list-status"></div>
+    </div>
+
+    <div class="card" id="article-editor" style="display:none;">
+      <h2 id="article-editor-title">Editar article</h2>
+
+      <label>Carpeta</label>
+      <select id="article-folder">
+        <option value="blog">blog (articles curts)</option>
+        <option value="cursos">cursos (mòduls de curs)</option>
+        <option value="accions">accions (anàlisi d'accions)</option>
+      </select>
+
+      <label>Id (nom del fitxer, sense espais ni accents)</label>
+      <input type="text" id="article-id" placeholder="el-meu-article" />
+
+      <label>Títol</label>
+      <input type="text" id="article-title" placeholder="Títol de l'article" />
+
+      <label>Descripció</label>
+      <input type="text" id="article-description" placeholder="Una o dues frases per a la llista d'articles" />
+
+      <label>Categoria</label>
+      <input type="text" id="article-category" placeholder="Conceptes" />
+
+      <label>Etiquetes (separades per comes)</label>
+      <input type="text" id="article-tags" placeholder="Bàsic, Estalvi" />
+
+      <div class="row">
+        <div>
+          <label>Data</label>
+          <input type="text" id="article-date" placeholder="2026-08-22" />
+        </div>
+        <div>
+          <label>Temps de lectura (minuts, opcional)</label>
+          <input type="number" id="article-readtime" placeholder="5" />
+        </div>
+        <div class="col-fixed">
+          <label>Publicat?</label>
+          <select id="article-publish">
+            <option value="1">Sí</option>
+            <option value="0">No (esborrany)</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Contingut (Markdown)</label>
+      <textarea id="article-body" rows="14" placeholder="# Títol&#10;&#10;Contingut de l'article..."></textarea>
+
+      <hr />
+      <div class="row">
+        <div class="col-fixed"><button class="btn-primary" id="article-save-btn">Desar article</button></div>
+        <div class="col-fixed"><button class="btn-secondary" id="article-cancel-btn">Cancel·lar</button></div>
+      </div>
+      <div class="status" id="article-status"></div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+'use strict';
+
+// ---------- Config ----------
+const REPO_OWNER = 'ricard-gi';
+const REPO_NAME = 'borsaula';
+const BRANCH = 'main';
+const API_BASE = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`;
+const TOKEN_STORAGE_KEY = 'borsaula_editor_token';
+const ARTICLE_DIRS = ['blog', 'cursos', 'accions'];
+
+// ---------- Utils: base64 <-> utf8 ----------
+function utf8ToBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  bytes.forEach((b) => { binary += String.fromCharCode(b); });
+  return btoa(binary);
+}
+function base64ToUtf8(base64) {
+  const binary = atob(base64.replace(/\n/g, ''));
+  const bytes = new Uint8Array(binary.length);
+  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+function encodePath(path) {
+  return path.split('/').map(encodeURIComponent).join('/');
+}
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// ---------- Token ----------
+function getToken() { return localStorage.getItem(TOKEN_STORAGE_KEY) || ''; }
+function setToken(t) { localStorage.setItem(TOKEN_STORAGE_KEY, t); }
+function clearToken() { localStorage.removeItem(TOKEN_STORAGE_KEY); }
+
+// ---------- GitHub API ----------
+async function ghRequest(path, options = {}) {
+  const token = getToken();
+  if (!token) throw new Error('Falta el token de GitHub. Introdueix-lo a dalt.');
+
+  const res = await fetch(`${API_BASE}${path}`, {
+    ...options,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      ...(options.headers || {}),
+    },
+  });
+
+  if (!res.ok) {
+    let message = `Error ${res.status}`;
+    try {
+      const body = await res.json();
+      if (body && body.message) message = body.message;
+    } catch (_e) { /* ignore */ }
+    throw new Error(message);
+  }
+
+  if (res.status === 204) return null;
+  return res.json();
+}
+
+async function getFile(path) {
+  const data = await ghRequest(`/contents/${encodePath(path)}?ref=${BRANCH}`);
+  return { sha: data.sha, content: base64ToUtf8(data.content) };
+}
+
+async function putFile(path, content, sha, message) {
+  const body = { message, content: utf8ToBase64(content), branch: BRANCH };
+  if (sha) body.sha = sha;
+  return ghRequest(`/contents/${encodePath(path)}`, {
+    method: 'PUT',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+}
+
+async function listDir(path) {
+  try {
+    return await ghRequest(`/contents/${encodePath(path)}?ref=${BRANCH}`);
+  } catch (e) {
+    return [];
+  }
+}
+
+// ---------- Status helpers ----------
+function setStatus(elId, message, kind) {
+  const el = document.getElementById(elId);
+  el.textContent = message;
+  el.className = 'status' + (kind ? ' ' + kind : '');
+}
+
+// ---------- Auth wiring ----------
+const tokenInput = document.getElementById('token-input');
+tokenInput.value = getToken();
+
+document.getElementById('save-token-btn').addEventListener('click', async () => {
+  setToken(tokenInput.value.trim());
+  setStatus('token-status', 'Comprovant accés...', 'loading');
+  try {
+    const repo = await ghRequest('');
+    const canWrite = repo.permissions && repo.permissions.push;
+    setStatus(
+      'token-status',
+      `✓ Connectat a ${repo.full_name}${canWrite ? '' : ' (avís: aquest token no sembla tenir permís d\'escriptura)'}`,
+      'ok'
+    );
+  } catch (e) {
+    setStatus('token-status', `✗ ${e.message}`, 'error');
+  }
+});
+
+document.getElementById('clear-token-btn').addEventListener('click', () => {
+  clearToken();
+  tokenInput.value = '';
+  setStatus('token-status', 'Token esborrat.', '');
+});
+
+// ---------- Tabs ----------
+document.querySelectorAll('.tab-btn').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach((p) => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.panel).classList.add('active');
+  });
+});
+
+// ==========================================================
+// PICKS
+// ==========================================================
+let picksData = [];
+let picksSha = null;
+
+function renderPicks() {
+  const container = document.getElementById('picks-list');
+  container.innerHTML = '';
+  picksData.forEach((pick, index) => {
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.innerHTML = `
+      <div><label>Nom</label><input type="text" data-field="name" value="${escapeHtml(pick.name || '')}" /></div>
+      <div><label>Tiquet</label><input type="text" data-field="ticker" value="${escapeHtml(pick.ticker || '')}" /></div>
+      <div class="col-fixed"><label>&nbsp;</label><button class="btn-danger" data-action="remove">Treure</button></div>
+    `;
+    row.querySelector('[data-field="name"]').addEventListener('input', (e) => { picksData[index].name = e.target.value; });
+    row.querySelector('[data-field="ticker"]').addEventListener('input', (e) => { picksData[index].ticker = e.target.value.toUpperCase(); });
+    row.querySelector('[data-action="remove"]').addEventListener('click', () => {
+      picksData.splice(index, 1);
+      renderPicks();
+    });
+    container.appendChild(row);
+  });
+}
+
+async function loadPicks() {
+  setStatus('picks-status', 'Carregant...', 'loading');
+  try {
+    const file = await getFile('borsaires_picks.json');
+    picksData = JSON.parse(file.content);
+    picksSha = file.sha;
+    renderPicks();
+    setStatus('picks-status', 'Carregat.', 'ok');
+  } catch (e) {
+    setStatus('picks-status', `✗ ${e.message}`, 'error');
+  }
+}
+
+document.getElementById('picks-reload-btn').addEventListener('click', loadPicks);
+document.getElementById('picks-add-btn').addEventListener('click', () => {
+  picksData.push({ name: '', ticker: '' });
+  renderPicks();
+});
+document.getElementById('picks-save-btn').addEventListener('click', async () => {
+  setStatus('picks-status', 'Desant...', 'loading');
+  try {
+    const cleaned = picksData.filter((p) => p.name.trim() && p.ticker.trim());
+    const content = JSON.stringify(cleaned, null, 2) + '\n';
+    const result = await putFile('borsaires_picks.json', content, picksSha, 'Actualitza borsaires_picks.json des de l\'editor');
+    picksSha = result.content.sha;
+    picksData = cleaned;
+    renderPicks();
+    setStatus('picks-status', '✓ Desat correctament.', 'ok');
+  } catch (e) {
+    setStatus('picks-status', `✗ ${e.message}`, 'error');
+  }
+});
+
+// ==========================================================
+// PROFILES
+// ==========================================================
+let profilesData = [];
+let profilesSha = null;
+
+function renderProfiles() {
+  const container = document.getElementById('profiles-list');
+  container.innerHTML = '';
+  profilesData.forEach((profile, pIndex) => {
+    const card = document.createElement('div');
+    card.className = 'profile-card';
+
+    const assetsHtml = profile.assets.map((asset, aIndex) => `
+      <div class="asset-row" data-asset-index="${aIndex}">
+        <input type="text" data-field="ticker" placeholder="Tiquet" value="${escapeHtml(asset.ticker || '')}" />
+        <input type="number" data-field="allocatedAmount" placeholder="Import €" value="${asset.allocatedAmount ?? ''}" />
+        <button class="btn-danger" data-action="remove-asset">Treure</button>
+      </div>
+    `).join('');
+
+    card.innerHTML = `
+      <div class="row">
+        <div><label>Nom</label><input type="text" data-field="name" value="${escapeHtml(profile.name || '')}" /></div>
+        <div class="col-fixed"><label>Risc</label>
+          <select data-field="riskLevel">
+            <option value="conservador" ${profile.riskLevel === 'conservador' ? 'selected' : ''}>Conservador</option>
+            <option value="agressiu" ${profile.riskLevel === 'agressiu' ? 'selected' : ''}>Agressiu</option>
+          </select>
+        </div>
+      </div>
+      <label>Id intern</label>
+      <input type="text" data-field="id" value="${escapeHtml(profile.id || '')}" />
+      <label>Descripció</label>
+      <textarea data-field="description" rows="2">${escapeHtml(profile.description || '')}</textarea>
+      <label>Actius</label>
+      <div data-assets-container>${assetsHtml}</div>
+      <button class="btn-secondary" data-action="add-asset" style="margin-top:6px;">+ Afegir actiu</button>
+      <hr />
+      <button class="btn-danger" data-action="remove-profile">Eliminar aquest perfil</button>
+    `;
+
+    card.querySelector('[data-field="name"]').addEventListener('input', (e) => { profile.name = e.target.value; });
+    card.querySelector('[data-field="id"]').addEventListener('input', (e) => { profile.id = e.target.value; });
+    card.querySelector('[data-field="riskLevel"]').addEventListener('change', (e) => { profile.riskLevel = e.target.value; });
+    card.querySelector('[data-field="description"]').addEventListener('input', (e) => { profile.description = e.target.value; });
+
+    card.querySelectorAll('.asset-row').forEach((assetRow) => {
+      const aIndex = Number(assetRow.dataset.assetIndex);
+      assetRow.querySelector('[data-field="ticker"]').addEventListener('input', (e) => {
+        profile.assets[aIndex].ticker = e.target.value.toUpperCase();
+      });
+      assetRow.querySelector('[data-field="allocatedAmount"]').addEventListener('input', (e) => {
+        profile.assets[aIndex].allocatedAmount = Number(e.target.value);
+      });
+      assetRow.querySelector('[data-action="remove-asset"]').addEventListener('click', () => {
+        profile.assets.splice(aIndex, 1);
+        renderProfiles();
+      });
+    });
+
+    card.querySelector('[data-action="add-asset"]').addEventListener('click', () => {
+      profile.assets.push({ ticker: '', allocatedAmount: 0 });
+      renderProfiles();
+    });
+    card.querySelector('[data-action="remove-profile"]').addEventListener('click', () => {
+      profilesData.splice(pIndex, 1);
+      renderProfiles();
+    });
+
+    container.appendChild(card);
+  });
+}
+
+async function loadProfiles() {
+  setStatus('profiles-status', 'Carregant...', 'loading');
+  try {
+    const file = await getFile('borsaires_perfils.json');
+    profilesData = JSON.parse(file.content);
+    profilesSha = file.sha;
+    renderProfiles();
+    setStatus('profiles-status', 'Carregat.', 'ok');
+  } catch (e) {
+    setStatus('profiles-status', `✗ ${e.message}`, 'error');
+  }
+}
+
+document.getElementById('profiles-reload-btn').addEventListener('click', loadProfiles);
+document.getElementById('profiles-add-btn').addEventListener('click', () => {
+  profilesData.push({ id: '', name: '', description: '', riskLevel: 'conservador', assets: [] });
+  renderProfiles();
+});
+document.getElementById('profiles-save-btn').addEventListener('click', async () => {
+  setStatus('profiles-status', 'Desant...', 'loading');
+  try {
+    profilesData.forEach((p) => {
+      if (!p.id) p.id = slugify(p.name || 'perfil');
+      p.assets = p.assets.filter((a) => a.ticker && a.ticker.trim());
+    });
+    const content = JSON.stringify(profilesData, null, 2) + '\n';
+    const result = await putFile('borsaires_perfils.json', content, profilesSha, 'Actualitza borsaires_perfils.json des de l\'editor');
+    profilesSha = result.content.sha;
+    renderProfiles();
+    setStatus('profiles-status', '✓ Desat correctament.', 'ok');
+  } catch (e) {
+    setStatus('profiles-status', `✗ ${e.message}`, 'error');
+  }
+});
+
+// ==========================================================
+// ARTICLES
+// ==========================================================
+let articlesIndex = []; // { folder, name, path, sha }
+let currentArticlePath = null;
+let currentArticleSha = null;
+
+function parseFrontMatter(content) {
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  if (!match) return { fields: {}, body: content };
+
+  const yaml = match[1];
+  const fields = {};
+  let lastKey = null;
+
+  for (const line of yaml.split(/\r?\n/)) {
+    const arrayKey = line.match(/^(\w+):\s*$/);
+    if (arrayKey) {
+      fields[arrayKey[1]] = [];
+      lastKey = arrayKey[1];
+      continue;
+    }
+    const listItem = line.match(/^\s+-\s+(.+)$/);
+    if (listItem && lastKey && Array.isArray(fields[lastKey])) {
+      fields[lastKey].push(listItem[1].trim());
+      continue;
+    }
+    const scalar = line.match(/^(\w+):\s*"?([^"]*?)"?\s*$/);
+    if (scalar) {
+      fields[scalar[1]] = scalar[2];
+      lastKey = scalar[1];
+    }
+  }
+
+  const body = content.slice(match[0].length).replace(/^\r?\n/, '');
+  return { fields, body };
+}
+
+function buildMarkdown(fields, body) {
+  const lines = ['---'];
+  lines.push(`id: ${fields.id}`);
+  lines.push(`publish: ${fields.publish}`);
+  lines.push(`title: "${fields.title.replace(/"/g, '\\"')}"`);
+  if (fields.description) lines.push(`description: "${fields.description.replace(/"/g, '\\"')}"`);
+  lines.push(`category: ${fields.category}`);
+  lines.push('tags:');
+  fields.tags.forEach((tag) => lines.push(`  - ${tag}`));
+  lines.push(`date: "${fields.date}"`);
+  if (fields.readTime) lines.push(`readTime: ${fields.readTime}`);
+  lines.push('---');
+  lines.push('');
+  lines.push(body);
+  return lines.join('\n') + (body.endsWith('\n') ? '' : '\n');
+}
+
+async function loadArticlesList() {
+  setStatus('articles-list-status', 'Carregant llista...', 'loading');
+  articlesIndex = [];
+  const container = document.getElementById('articles-list');
+  container.innerHTML = '';
+
+  try {
+    for (const dir of ARTICLE_DIRS) {
+      const entries = await listDir(dir);
+      if (!Array.isArray(entries)) continue;
+      entries
+        .filter((e) => e.type === 'file' && e.name.endsWith('.md'))
+        .forEach((e) => articlesIndex.push({ folder: dir, name: e.name, path: e.path, sha: e.sha }));
+    }
+
+    articlesIndex.forEach((entry) => {
+      const item = document.createElement('div');
+      item.className = 'list-item';
+      item.innerHTML = `<span>${entry.path}</span><small>${entry.folder}</small>`;
+      item.addEventListener('click', () => openArticle(entry));
+      container.appendChild(item);
+    });
+
+    setStatus('articles-list-status', `${articlesIndex.length} articles trobats.`, 'ok');
+  } catch (e) {
+    setStatus('articles-list-status', `✗ ${e.message}`, 'error');
+  }
+}
+
+async function openArticle(entry) {
+  setStatus('article-status', 'Carregant...', 'loading');
+  document.getElementById('article-editor').style.display = 'block';
+  document.getElementById('article-editor-title').textContent = `Editar: ${entry.path}`;
+
+  try {
+    const file = await getFile(entry.path);
+    currentArticlePath = entry.path;
+    currentArticleSha = file.sha;
+
+    const { fields, body } = parseFrontMatter(file.content);
+    document.getElementById('article-folder').value = entry.folder;
+    document.getElementById('article-folder').disabled = true;
+    document.getElementById('article-id').value = fields.id || '';
+    document.getElementById('article-id').disabled = true;
+    document.getElementById('article-title').value = fields.title || '';
+    document.getElementById('article-description').value = fields.description || '';
+    document.getElementById('article-category').value = fields.category || '';
+    document.getElementById('article-tags').value = (fields.tags || []).join(', ');
+    document.getElementById('article-date').value = fields.date || '';
+    document.getElementById('article-readtime').value = fields.readTime || '';
+    document.getElementById('article-publish').value = fields.publish === '0' ? '0' : '1';
+    document.getElementById('article-body').value = body;
+
+    setStatus('article-status', '', '');
+  } catch (e) {
+    setStatus('article-status', `✗ ${e.message}`, 'error');
+  }
+}
+
+document.getElementById('articles-reload-btn').addEventListener('click', loadArticlesList);
+
+document.getElementById('articles-new-btn').addEventListener('click', () => {
+  currentArticlePath = null;
+  currentArticleSha = null;
+  document.getElementById('article-editor').style.display = 'block';
+  document.getElementById('article-editor-title').textContent = 'Nou article';
+  document.getElementById('article-folder').disabled = false;
+  document.getElementById('article-folder').value = 'blog';
+  document.getElementById('article-id').disabled = false;
+  document.getElementById('article-id').value = '';
+  document.getElementById('article-title').value = '';
+  document.getElementById('article-description').value = '';
+  document.getElementById('article-category').value = '';
+  document.getElementById('article-tags').value = '';
+  document.getElementById('article-date').value = new Date().toISOString().slice(0, 10);
+  document.getElementById('article-readtime').value = '';
+  document.getElementById('article-publish').value = '0';
+  document.getElementById('article-body').value = `# Títol\n\nContingut de l'article...`;
+  setStatus('article-status', '', '');
+});
+
+document.getElementById('article-cancel-btn').addEventListener('click', () => {
+  document.getElementById('article-editor').style.display = 'none';
+});
+
+document.getElementById('article-save-btn').addEventListener('click', async () => {
+  const id = document.getElementById('article-id').value.trim();
+  const folder = document.getElementById('article-folder').value;
+
+  if (!id) {
+    setStatus('article-status', '✗ Cal un id per al fitxer.', 'error');
+    return;
+  }
+
+  const fields = {
+    id,
+    publish: document.getElementById('article-publish').value,
+    title: document.getElementById('article-title').value,
+    description: document.getElementById('article-description').value,
+    category: document.getElementById('article-category').value,
+    tags: document.getElementById('article-tags').value.split(',').map((t) => t.trim()).filter(Boolean),
+    date: document.getElementById('article-date').value,
+    readTime: document.getElementById('article-readtime').value,
+  };
+  const body = document.getElementById('article-body').value;
+  const content = buildMarkdown(fields, body);
+  const path = currentArticlePath || `${folder}/${id}.md`;
+
+  setStatus('article-status', 'Desant...', 'loading');
+  try {
+    const result = await putFile(path, content, currentArticleSha, `${currentArticleSha ? 'Actualitza' : 'Crea'} article ${path} des de l'editor`);
+    currentArticlePath = path;
+    currentArticleSha = result.content.sha;
+    setStatus('article-status', '✓ Desat correctament. L\'índex (index.json) es regenera automàticament en uns segons.', 'ok');
+    loadArticlesList();
+  } catch (e) {
+    setStatus('article-status', `✗ ${e.message}`, 'error');
+  }
+});
+
+// ---------- Helpers ----------
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ---------- Init ----------
+if (getToken()) {
+  loadPicks();
+  loadProfiles();
+  loadArticlesList();
+}
+</script>
+
+</body>
+</html>

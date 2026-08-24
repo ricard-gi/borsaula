@@ -38,5 +38,9 @@
   {
     "name": "SpaceX",
     "ticker": "SPCX"
+  },
+  {
+    "name": "Tesco",
+    "ticker": "TSCO"
   }
 ]

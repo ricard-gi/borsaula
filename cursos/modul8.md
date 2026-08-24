@@ -5,6 +5,7 @@ title: "Estratègies avançades d'inversió (8/8)"
 category: Cursos
 tags:
   - DesDeZero
+  - Cursos
 date: "2026-04-23"
 ---
 

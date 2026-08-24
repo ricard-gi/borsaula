@@ -5,6 +5,7 @@ title: "Valoració d'accions i negocis (6/8)"
 category: Cursos
 tags:
   - DesDeZero
+  - Cursos
 date: "2026-06-08"
 ---
 

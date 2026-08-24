@@ -4,7 +4,8 @@
     "title": "Fiscalitat (7/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-06-24",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul7.md"
@@ -14,7 +15,8 @@
     "title": "Valoració d'accions i negocis (6/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-06-08",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul6.md"
@@ -24,7 +26,8 @@
     "title": "Construir un pla d'inversió (5/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-05-15",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul5.md"
@@ -34,7 +37,8 @@
     "title": "Psicologia de l'inversor (4/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-05-08",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul4.md"
@@ -44,7 +48,8 @@
     "title": "Elecció del broker i primera compra (3/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-05-03",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul3.md"
@@ -55,7 +60,8 @@
     "category": "Conceptes",
     "tags": [
       "Estalvi",
-      "Bàsic"
+      "Bàsic",
+      "Conceptes"
     ],
     "date": "2026-04-20",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/diversificacio.md"
@@ -66,7 +72,8 @@
     "category": "Conceptes",
     "tags": [
       "Estalvi",
-      "Bàsic"
+      "Bàsic",
+      "Conceptes"
     ],
     "date": "2026-04-20",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/inflacio.md"
@@ -77,7 +84,8 @@
     "category": "Conceptes",
     "tags": [
       "Estratègia",
-      "Bàsic"
+      "Bàsic",
+      "Conceptes"
     ],
     "date": "2026-04-20",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/temps.md"
@@ -87,7 +95,8 @@
     "title": "Accions, ETFs, Bons i Opcions (2/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-04-13",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul2.md"
@@ -97,7 +106,8 @@
     "title": "Mentalitat i preparació (1/8)",
     "category": "Cursos",
     "tags": [
-      "DesDeZero"
+      "DesDeZero",
+      "Cursos"
     ],
     "date": "2026-04-06",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/cursos/modul1.md"
@@ -108,7 +118,8 @@
     "category": "Conceptes",
     "tags": [
       "Bàsic",
-      "Estalvi"
+      "Estalvi",
+      "Conceptes"
     ],
     "date": "2026-03-22",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/blog/interes-compost.md"
@@ -120,7 +131,8 @@
     "tags": [
       "NVDA",
       "Tecnologia",
-      "IA"
+      "IA",
+      "Accions"
     ],
     "date": "2026-03-22",
     "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/analisi-nvidia.md"

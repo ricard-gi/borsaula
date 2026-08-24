@@ -6,6 +6,7 @@ category: Conceptes
 tags:
   - Estratègia
   - Bàsic
+  - Conceptes
 date: "2026-04-20"
 ---
 

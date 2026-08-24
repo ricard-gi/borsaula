@@ -7,6 +7,7 @@ category: Conceptes
 tags:
   - Bàsic
   - Estalvi
+  - Conceptes
 date: "2026-04-17"
 readTime: 5
 ---

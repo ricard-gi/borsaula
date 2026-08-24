@@ -5,6 +5,7 @@ title: "Accions, ETFs, Bons i Opcions (2/8)"
 category: Cursos
 tags:
   - DesDeZero
+  - Cursos
 date: "2026-04-13"
 ---
 

@@ -7,6 +7,7 @@ tags:
   - NVDA
   - Tecnologia
   - IA
+  - Accions
 date: "2026-03-22"
 ---
 

@@ -5,6 +5,7 @@ title: "Psicologia de l'inversor (4/8)"
 category: Cursos
 tags:
   - DesDeZero
+  - Cursos
 date: "2026-05-08"
 ---
 

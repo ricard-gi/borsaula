@@ -5,6 +5,7 @@ title: "Elecció del broker i primera compra (3/8)"
 category: Cursos
 tags:
   - DesDeZero
+  - Cursos
 date: "2026-05-03"
 ---
 

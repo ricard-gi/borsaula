@@ -5,11 +5,26 @@
     "description": "Cartera pensada per prioritzar l'estabilitat: pes fort en un ETF diversificat i negocis consolidats de baixa volatilitat.",
     "riskLevel": "conservador",
     "assets": [
-      { "ticker": "SPY", "allocatedAmount": 3000 },
-      { "ticker": "MSFT", "allocatedAmount": 2000 },
-      { "ticker": "GOOGL", "allocatedAmount": 2000 },
-      { "ticker": "CSU.TO", "allocatedAmount": 1500 },
-      { "ticker": "WM", "allocatedAmount": 1500 }
+      {
+        "ticker": "SPY",
+        "allocatedAmount": 3000
+      },
+      {
+        "ticker": "MSFT",
+        "allocatedAmount": 2000
+      },
+      {
+        "ticker": "GOOGL",
+        "allocatedAmount": 2000
+      },
+      {
+        "ticker": "CSU.TO",
+        "allocatedAmount": 1500
+      },
+      {
+        "ticker": "WM",
+        "allocatedAmount": 1500
+      }
     ]
   },
   {
@@ -18,10 +33,38 @@
     "description": "Cartera orientada al creixement, amb més pes en tecnològiques i negocis disruptius, assumint més volatilitat.",
     "riskLevel": "agressiu",
     "assets": [
-      { "ticker": "NVDA", "allocatedAmount": 3000 },
-      { "ticker": "TSLA", "allocatedAmount": 2500 },
-      { "ticker": "META", "allocatedAmount": 2500 },
-      { "ticker": "AAPL", "allocatedAmount": 2000 }
+      {
+        "ticker": "NVDA",
+        "allocatedAmount": 3000
+      },
+      {
+        "ticker": "TSLA",
+        "allocatedAmount": 2500
+      },
+      {
+        "ticker": "META",
+        "allocatedAmount": 2500
+      },
+      {
+        "ticker": "AAPL",
+        "allocatedAmount": 2000
+      }
+    ]
+  },
+  {
+    "id": "etfs",
+    "name": "ETFs",
+    "description": "Cartera conservadora orientada a XXX",
+    "riskLevel": "conservador",
+    "assets": [
+      {
+        "ticker": "MSFT",
+        "allocatedAmount": 1000
+      },
+      {
+        "ticker": "SPCX",
+        "allocatedAmount": 2000
+      }
     ]
   }
 ]

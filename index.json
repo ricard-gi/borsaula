@@ -1,5 +1,17 @@
 [
   {
+    "id": "tesla01",
+    "title": "Tesla (TSLA): més enllà dels cotxes",
+    "description": "Tesla es va fer un nom fabricant cotxes elèctrics quan ningú hi creia. Avui, però, l'empresa es ven a si mateixa com una cosa molt diferent: una companyia d'intel·ligència artificial i robòtica que, per casualitat, també fa cotxes.",
+    "category": "Accions",
+    "tags": [
+      "Tecnologia",
+      "Automoció"
+    ],
+    "date": "2026-08-24",
+    "contentUrl": "https://raw.githubusercontent.com/ricard-gi/borsaula/refs/heads/main/accions/tesla01.md"
+  },
+  {
     "id": "curs01-07",
     "title": "Fiscalitat (7/8)",
     "category": "Cursos",

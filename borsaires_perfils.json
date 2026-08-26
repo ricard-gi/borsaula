@@ -186,5 +186,17 @@
         "allocatedAmount": 1
       }
     ]
+  },
+  {
+    "id": "asda",
+    "name": "prova",
+    "description": "asdasd",
+    "riskLevel": "conservador",
+    "assets": [
+      {
+        "ticker": "MSFT",
+        "allocatedAmount": 111
+      }
+    ]
   }
 ]

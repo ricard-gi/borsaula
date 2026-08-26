@@ -305,8 +305,20 @@ async function getFile(path) {
 }
 
 async function putFile(path, content, sha, message) {
+  let resolvedSha = sha;
+  if (!resolvedSha) {
+    // Xarxa de seguretat: si per qualsevol motiu no teníem el sha en memòria
+    // (recàrrega fallida, sessió llarga...), l'anem a buscar just abans de desar
+    // en lloc de deixar que GitHub rebutgi la petició amb "'sha' wasn't supplied".
+    try {
+      const existing = await getFile(path);
+      resolvedSha = existing.sha;
+    } catch (_e) {
+      // El fitxer no existeix encara: es crearà de nou, sense sha.
+    }
+  }
   const body = { message, content: utf8ToBase64(content), branch: BRANCH };
-  if (sha) body.sha = sha;
+  if (resolvedSha) body.sha = resolvedSha;
   return ghRequest(`/contents/${encodePath(path)}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
@@ -344,6 +356,11 @@ document.getElementById('save-token-btn').addEventListener('click', async () => 
       `✓ Connectat a ${repo.full_name}${canWrite ? '' : ' (avís: aquest token no sembla tenir permís d\'escriptura)'}`,
       'ok'
     );
+    // Sense això, picksSha/profilesSha es quedaven a null fins que es clicava
+    // "Recarregar" manualment, i "Desar canvis" fallava amb "'sha' wasn't supplied".
+    loadPicks();
+    loadProfiles();
+    loadArticlesList();
   } catch (e) {
     setStatus('token-status', `✗ ${e.message}`, 'error');
   }

@@ -196,6 +196,10 @@
       {
         "ticker": "MSFT",
         "allocatedAmount": 111
+      },
+      {
+        "ticker": "KFC",
+        "allocatedAmount": 323
       }
     ]
   }

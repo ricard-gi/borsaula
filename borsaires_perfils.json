@@ -78,5 +78,113 @@
         "allocatedAmount": 100
       }
     ]
+  },
+  {
+    "id": "Warren",
+    "name": "Cartera Warren Buffett (Berkshire Hathaway)",
+    "description": "Inverteix com el gran mestre: mira les accions que té Warren Buffett a la seva cartera de Berkshire Hathaway.",
+    "riskLevel": "equilibrat",
+    "assets": [
+      {
+        "ticker": "AAPL",
+        "allocatedAmount": 220
+      },
+      {
+        "ticker": "AXP",
+        "allocatedAmount": 171
+      },
+      {
+        "ticker": "KO",
+        "allocatedAmount": 109
+      },
+      {
+        "ticker": "GOOGL",
+        "allocatedAmount": 94
+      },
+      {
+        "ticker": "BAC",
+        "allocatedAmount": 92
+      },
+      {
+        "ticker": "CVX",
+        "allocatedAmount": 47
+      },
+      {
+        "ticker": "OXY",
+        "allocatedAmount": 43
+      },
+      {
+        "ticker": "CB",
+        "allocatedAmount": 39
+      },
+      {
+        "ticker": "MCO",
+        "allocatedAmount": 37
+      },
+      {
+        "ticker": "GOOG",
+        "allocatedAmount": 32
+      },
+      {
+        "ticker": "KHC",
+        "allocatedAmount": 26
+      },
+      {
+        "ticker": "DVA",
+        "allocatedAmount": 21
+      },
+      {
+        "ticker": "DAL",
+        "allocatedAmount": 18
+      },
+      {
+        "ticker": "SIRI",
+        "allocatedAmount": 12
+      },
+      {
+        "ticker": "VRSN",
+        "allocatedAmount": 8
+      },
+      {
+        "ticker": "KR",
+        "allocatedAmount": 7
+      },
+      {
+        "ticker": "ALLY",
+        "allocatedAmount": 4
+      },
+      {
+        "ticker": "LEN",
+        "allocatedAmount": 4
+      },
+      {
+        "ticker": "LLYV.K",
+        "allocatedAmount": 4
+      },
+      {
+        "ticker": "NYT",
+        "allocatedAmount": 4
+      },
+      {
+        "ticker": "COF",
+        "allocatedAmount": 2
+      },
+      {
+        "ticker": "LLYV.A",
+        "allocatedAmount": 2
+      },
+      {
+        "ticker": "LPX",
+        "allocatedAmount": 1
+      },
+      {
+        "ticker": "NUE",
+        "allocatedAmount": 1
+      },
+      {
+        "ticker": "M",
+        "allocatedAmount": 1
+      }
+    ]
   }
 ]

@@ -26,10 +26,6 @@
         "allocatedAmount": 100
       },
       {
-        "ticker": "MSFT",
-        "allocatedAmount": 200
-      },
-      {
         "ticker": "DG.PA",
         "allocatedAmount": 100
       }

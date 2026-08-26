@@ -18,7 +18,7 @@
         "allocatedAmount": 100
       },
       {
-        "ticker": "CSU",
+        "ticker": "CSU.TO",
         "allocatedAmount": 200
       },
       {
@@ -28,6 +28,10 @@
       {
         "ticker": "MSFT",
         "allocatedAmount": 200
+      },
+      {
+        "ticker": "DG.PA",
+        "allocatedAmount": 0
       }
     ]
   },

@@ -32,6 +32,10 @@
       {
         "ticker": "MSFT",
         "allocatedAmount": 200
+      },
+      {
+        "ticker": "KO",
+        "allocatedAmount": 100
       }
     ]
   },

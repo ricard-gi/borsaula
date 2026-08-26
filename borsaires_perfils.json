@@ -28,10 +28,6 @@
       {
         "ticker": "MSFT",
         "allocatedAmount": 200
-      },
-      {
-        "ticker": "SGEF",
-        "allocatedAmount": 100
       }
     ]
   },

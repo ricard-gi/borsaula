@@ -4,40 +4,7 @@
     "name": "Accions Ricard (Temporada 1 Borsaires)",
     "description": "Simulació de cartera en base a les accions recomanades setmanalment per en Ricard Hernández en la temporada 1 del pòdcast de Borsaires.",
     "riskLevel": "equilibrat",
-    "assets": [
-      {
-        "ticker": "DTE.DE",
-        "allocatedAmount": 100
-      },
-      {
-        "ticker": "UNP",
-        "allocatedAmount": 100
-      },
-      {
-        "ticker": "V",
-        "allocatedAmount": 100
-      },
-      {
-        "ticker": "CSU.TO",
-        "allocatedAmount": 200
-      },
-      {
-        "ticker": "MELI",
-        "allocatedAmount": 100
-      },
-      {
-        "ticker": "DG.PA",
-        "allocatedAmount": 100
-      },
-      {
-        "ticker": "MSFT",
-        "allocatedAmount": 200
-      },
-      {
-        "ticker": "KO",
-        "allocatedAmount": 100
-      }
-    ]
+    "assets": []
   },
   {
     "id": "Martí",

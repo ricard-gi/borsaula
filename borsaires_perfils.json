@@ -31,7 +31,11 @@
       },
       {
         "ticker": "DG.PA",
-        "allocatedAmount": 100
+        "allocatedAmount": 50
+      },
+      {
+        "ticker": "DG.PA",
+        "allocatedAmount": 50
       }
     ]
   },

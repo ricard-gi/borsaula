@@ -6,7 +6,7 @@
     "riskLevel": "equilibrat",
     "assets": [
       {
-        "ticker": "DTE",
+        "ticker": "DTE.DE",
         "allocatedAmount": 100
       },
       {

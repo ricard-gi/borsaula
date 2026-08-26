@@ -1,7 +1,7 @@
 [
   {
     "id": "Ricard",
-    "name": "Accions Ricard (Temporada 1 Borsaires)",
+    "name": "Cartera Ricard (Temporada 1 Borsaires)",
     "description": "Simulació de cartera en base a les accions recomanades setmanalment per en Ricard Hernández en la temporada 1 del pòdcast de Borsaires.",
     "riskLevel": "equilibrat",
     "assets": [
@@ -41,7 +41,7 @@
   },
   {
     "id": "Martí",
-    "name": "Accions Martí (Temporada 1 Borsaires)",
+    "name": "Cartera Martí (Temporada 1 Borsaires)",
     "description": "Simulació de cartera en base a les accions recomanades setmanalment per en Martí Fernández-Real en la temporada 1 del pòdcast de Borsaires.",
     "riskLevel": "agressiu",
     "assets": [

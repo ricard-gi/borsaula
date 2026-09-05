@@ -250,53 +250,5 @@
         "allocatedAmount": 21
       }
     ]
-  },
-  {
-    "id": "Donald",
-    "name": "Cartera Donald Trump",
-    "description": "Inverteix com el president d’Estats Untis: aquesta és la cartera d’accions del magnat.",
-    "riskLevel": "agressiu",
-    "assets": [
-      {
-        "ticker": "DJT",
-        "allocatedAmount": 3800
-      },
-      {
-        "ticker": "AAPL",
-        "allocatedAmount": 846
-      },
-      {
-        "ticker": "NVDA",
-        "allocatedAmount": 723
-      },
-      {
-        "ticker": "MSFT",
-        "allocatedAmount": 667
-      },
-      {
-        "ticker": "META",
-        "allocatedAmount": 632
-      },
-      {
-        "ticker": "ORCL",
-        "allocatedAmount": 601
-      },
-      {
-        "ticker": "GS",
-        "allocatedAmount": 573
-      },
-      {
-        "ticker": "BAC",
-        "allocatedAmount": 542
-      },
-      {
-        "ticker": "AMZN",
-        "allocatedAmount": 421
-      },
-      {
-        "ticker": "NOW",
-        "allocatedAmount": 357
-      }
-    ]
   }
 ]

@@ -258,7 +258,7 @@
     "riskLevel": "conservador",
     "assets": [
       {
-        "ticker": "BRK.B",
+        "ticker": "BRKB",
         "allocatedAmount": 2140
       },
       {

@@ -191,7 +191,7 @@
     "id": "Bill",
     "name": "Cartera Bill Ackman (Pershing Square)",
     "description": "Inverteix com un dels inversors més importants del món: mira les accions que té Bill Ackman (Pershing Square).",
-    "riskLevel": "conservador",
+    "riskLevel": "equilibrat",
     "assets": [
       {
         "ticker": "UBER",

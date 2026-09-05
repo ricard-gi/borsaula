@@ -188,7 +188,7 @@
     ]
   },
   {
-    "id": "Bill",
+    "id": "BillA",
     "name": "Cartera Bill Ackman (Pershing Square)",
     "description": "Inverteix com un dels inversors més importants del món: mira les accions que té Bill Ackman (Pershing Square).",
     "riskLevel": "equilibrat",
@@ -248,6 +248,90 @@
       {
         "ticker": "HTZ",
         "allocatedAmount": 21
+      }
+    ]
+  },
+  {
+    "id": "BillG",
+    "name": "Cartera Bill Gates (Cascade Investment)",
+    "description": "Descobreix la cartera d’accions del fundador de Microsoft. ",
+    "riskLevel": "conservador",
+    "assets": [
+      {
+        "ticker": "BRK.B",
+        "allocatedAmount": 2140
+      },
+      {
+        "ticker": "CAT",
+        "allocatedAmount": 1970
+      },
+      {
+        "ticker": "CNI",
+        "allocatedAmount": 1800
+      },
+      {
+        "ticker": "WM",
+        "allocatedAmount": 840
+      },
+      {
+        "ticker": "DE",
+        "allocatedAmount": 620
+      },
+      {
+        "ticker": "ECL",
+        "allocatedAmount": 450
+      },
+      {
+        "ticker": "WMT",
+        "allocatedAmount": 390
+      },
+      {
+        "ticker": "FDX",
+        "allocatedAmount": 300
+      },
+      {
+        "ticker": "KOF",
+        "allocatedAmount": 280
+      },
+      {
+        "ticker": "HD",
+        "allocatedAmount": 360
+      },
+      {
+        "ticker": "WCN",
+        "allocatedAmount": 230
+      },
+      {
+        "ticker": "MSGS",
+        "allocatedAmount": 180
+      },
+      {
+        "ticker": "CPNG",
+        "allocatedAmount": 120
+      },
+      {
+        "ticker": "WST",
+        "allocatedAmount": 110
+      },
+      {
+        "ticker": "BUD",
+        "allocatedAmount": 90
+      },
+      {
+        "ticker": "PCAR",
+        "allocatedAmount": 70
+      },
+      {
+        "ticker": "SDGR",
+        "allocatedAmount": 60
+      },
+      {
+        "ticker": "MCD",
+        "allocatedAmount": 50
+      },
+      {
+        "ticker": "DHR",
+        "allocatedAmount": 40
       }
     ]
   }

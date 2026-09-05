@@ -1,6 +1,12 @@
 {
   "features": {
     "isPortfolioEnabled": false,
-    "inflationRate": 2.2
+    "inflationRate": 2.2,
+    "enabledTabs": {
+      "finances": true,
+      "simulador": true,
+      "inversions": true,
+      "aula": true
+    }
   }
 }

@@ -82,7 +82,7 @@
   {
     "id": "Warren",
     "name": "Cartera Warren Buffett (Berkshire Hathaway)",
-    "description": "Inverteix com el gran mestre: mira les accions que té Warren Buffett a la seva cartera de Berkshire Hathaway.",
+    "description": "Inverteix com el millor inversor de la història: mira les accions que té Warren Buffett a la seva cartera de Berkshire Hathaway.",
     "riskLevel": "equilibrat",
     "assets": [
       {
@@ -188,14 +188,66 @@
     ]
   },
   {
-    "id": "asda",
-    "name": "prova",
-    "description": "asdasd",
+    "id": "Bill",
+    "name": "Cartera Bill Ackman (Pershing Square)",
+    "description": "Inverteix com un dels inversors més importants del món: mira les accions que té Bill Ackman (Pershing Square).",
     "riskLevel": "conservador",
     "assets": [
       {
+        "ticker": "UBER",
+        "allocatedAmount": 1272
+      },
+      {
+        "ticker": "BN",
+        "allocatedAmount": 1258
+      },
+      {
         "ticker": "MSFT",
-        "allocatedAmount": 111
+        "allocatedAmount": 1189
+      },
+      {
+        "ticker": "AMZN",
+        "allocatedAmount": 1049
+      },
+      {
+        "ticker": "HHH",
+        "allocatedAmount": 1023
+      },
+      {
+        "ticker": "QSR",
+        "allocatedAmount": 963
+      },
+      {
+        "ticker": "META",
+        "allocatedAmount": 925
+      },
+      {
+        "ticker": "V",
+        "allocatedAmount": 584
+      },
+      {
+        "ticker": "MA",
+        "allocatedAmount": 564
+      },
+      {
+        "ticker": "SPGI",
+        "allocatedAmount": 544
+      },
+      {
+        "ticker": "NFLX",
+        "allocatedAmount": 479
+      },
+      {
+        "ticker": "PSUS",
+        "allocatedAmount": 79
+      },
+      {
+        "ticker": "SEG",
+        "allocatedAmount": 72
+      },
+      {
+        "ticker": "HTZ",
+        "allocatedAmount": 21
       }
     ]
   }

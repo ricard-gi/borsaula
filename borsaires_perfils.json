@@ -82,7 +82,7 @@
   {
     "id": "Warren",
     "name": "Cartera Warren Buffett (Berkshire Hathaway)",
-    "description": "Inverteix com el gran mestre: mira les accions que té Warren Buffett a la seva cartera de Berkshire Hathaway.",
+    "description": "Inverteix com el millor inversor de la història: mira les accions que té Warren Buffett a la seva cartera de Berkshire Hathaway.",
     "riskLevel": "equilibrat",
     "assets": [
       {
@@ -188,14 +188,198 @@
     ]
   },
   {
-    "id": "asda",
-    "name": "prova",
-    "description": "asdasd",
+    "id": "BillA",
+    "name": "Cartera Bill Ackman (Pershing Square)",
+    "description": "Inverteix com un dels inversors més importants del món: mira les accions que té Bill Ackman (Pershing Square).",
+    "riskLevel": "equilibrat",
+    "assets": [
+      {
+        "ticker": "UBER",
+        "allocatedAmount": 1272
+      },
+      {
+        "ticker": "BN",
+        "allocatedAmount": 1258
+      },
+      {
+        "ticker": "MSFT",
+        "allocatedAmount": 1189
+      },
+      {
+        "ticker": "AMZN",
+        "allocatedAmount": 1049
+      },
+      {
+        "ticker": "HHH",
+        "allocatedAmount": 1023
+      },
+      {
+        "ticker": "QSR",
+        "allocatedAmount": 963
+      },
+      {
+        "ticker": "META",
+        "allocatedAmount": 925
+      },
+      {
+        "ticker": "V",
+        "allocatedAmount": 584
+      },
+      {
+        "ticker": "MA",
+        "allocatedAmount": 564
+      },
+      {
+        "ticker": "SPGI",
+        "allocatedAmount": 544
+      },
+      {
+        "ticker": "NFLX",
+        "allocatedAmount": 479
+      },
+      {
+        "ticker": "PSUS",
+        "allocatedAmount": 79
+      },
+      {
+        "ticker": "SEG",
+        "allocatedAmount": 72
+      },
+      {
+        "ticker": "HTZ",
+        "allocatedAmount": 21
+      }
+    ]
+  },
+  {
+    "id": "BillG",
+    "name": "Cartera Bill Gates (Cascade Investment)",
+    "description": "Descobreix la cartera d’accions del fundador de Microsoft. ",
     "riskLevel": "conservador",
     "assets": [
       {
-        "ticker": "MSFT",
-        "allocatedAmount": 111
+        "ticker": "BRK-B",
+        "allocatedAmount": 2140
+      },
+      {
+        "ticker": "CAT",
+        "allocatedAmount": 1970
+      },
+      {
+        "ticker": "CNI",
+        "allocatedAmount": 1800
+      },
+      {
+        "ticker": "WM",
+        "allocatedAmount": 840
+      },
+      {
+        "ticker": "DE",
+        "allocatedAmount": 620
+      },
+      {
+        "ticker": "ECL",
+        "allocatedAmount": 450
+      },
+      {
+        "ticker": "WMT",
+        "allocatedAmount": 390
+      },
+      {
+        "ticker": "FDX",
+        "allocatedAmount": 300
+      },
+      {
+        "ticker": "KOF",
+        "allocatedAmount": 280
+      },
+      {
+        "ticker": "HD",
+        "allocatedAmount": 360
+      },
+      {
+        "ticker": "WCN",
+        "allocatedAmount": 230
+      },
+      {
+        "ticker": "MSGS",
+        "allocatedAmount": 180
+      },
+      {
+        "ticker": "CPNG",
+        "allocatedAmount": 120
+      },
+      {
+        "ticker": "WST",
+        "allocatedAmount": 110
+      },
+      {
+        "ticker": "BUD",
+        "allocatedAmount": 90
+      },
+      {
+        "ticker": "PCAR",
+        "allocatedAmount": 70
+      },
+      {
+        "ticker": "SDGR",
+        "allocatedAmount": 60
+      },
+      {
+        "ticker": "MCD",
+        "allocatedAmount": 50
+      },
+      {
+        "ticker": "DHR",
+        "allocatedAmount": 40
+      }
+    ]
+  },
+  {
+    "id": "Cathie",
+    "name": "Cartera Cathie Wood (ARKK)",
+    "description": "Mira una adaptació de la cartera d’una de les inversores més mediàtiques, centrada en innovació disruptiva. Hi apareixen les 10 posicions més rellevants d’un total d’una cinquantena.",
+    "riskLevel": "agressiu",
+    "assets": [
+      {
+        "ticker": "TSLA",
+        "allocatedAmount": 942
+      },
+      {
+        "ticker": "SPCX",
+        "allocatedAmount": 492
+      },
+      {
+        "ticker": "TEM",
+        "allocatedAmount": 481
+      },
+      {
+        "ticker": "CRSP",
+        "allocatedAmount": 466
+      },
+      {
+        "ticker": "COIN",
+        "allocatedAmount": 454
+      },
+      {
+        "ticker": "SHOP",
+        "allocatedAmount": 454
+      },
+      {
+        "ticker": "AMD",
+        "allocatedAmount": 396
+      },
+      {
+        "ticker": "CRCL",
+        "allocatedAmount": 382
+      },
+      {
+        "ticker": "HOOD",
+        "allocatedAmount": 354
+      },
+      {
+        "ticker": "TXG",
+        "allocatedAmount": 343
       }
     ]
   }

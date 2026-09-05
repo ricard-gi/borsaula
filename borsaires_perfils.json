@@ -334,5 +334,53 @@
         "allocatedAmount": 40
       }
     ]
+  },
+  {
+    "id": "Cathie",
+    "name": "Cartera Cathie Wood (ARKK)",
+    "description": "Mira una adaptació de la cartera d’una de les inversores més mediàtiques i centrada en innovació disruptiva. Hi apareixen les 10 posicions més rellevants d’un total d’una cinquantena.",
+    "riskLevel": "agressiu",
+    "assets": [
+      {
+        "ticker": "TSLA",
+        "allocatedAmount": 942
+      },
+      {
+        "ticker": "SPCX",
+        "allocatedAmount": 492
+      },
+      {
+        "ticker": "TEM",
+        "allocatedAmount": 481
+      },
+      {
+        "ticker": "CRSP",
+        "allocatedAmount": 466
+      },
+      {
+        "ticker": "COIN",
+        "allocatedAmount": 454
+      },
+      {
+        "ticker": "SHOP",
+        "allocatedAmount": 454
+      },
+      {
+        "ticker": "AMD",
+        "allocatedAmount": 396
+      },
+      {
+        "ticker": "CRCL",
+        "allocatedAmount": 382
+      },
+      {
+        "ticker": "HOOD",
+        "allocatedAmount": 354
+      },
+      {
+        "ticker": "TXG",
+        "allocatedAmount": 343
+      }
+    ]
   }
 ]

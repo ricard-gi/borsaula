@@ -3,7 +3,7 @@
     "isPortfolioEnabled": false,
     "inflationRate": 2.2,
     "enabledTabs": {
-      "finances": false,
+      "finances": true,
       "simulador": true,
       "inversions": true,
       "aula": true
